@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirect to Parent Page</title>
+</head>
+<body>
+
+<a href="#" id="redirectLink">Go to Parent Page</a>
+
+<script>
+document.getElementById("redirectLink").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+    
+    // Redirect to the parent page
+    window.parent.location.href = "index.php";
+});
+</script>
+
+</body>
+</html>
